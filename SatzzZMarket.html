@@ -306,7 +306,7 @@
   <main>
     <section class="hero">
       <h2>Selamat Datang di SatzzZ Market</h2>
-      <p>SatzzZ Market — Panel & layanan digital murah ✅ Support 24/7 via WA ⚡ Garansi 7 hari • Pembayaran mudah</p>
+      <p>Meningkatkan kualitas hidup Anda dengan solusi inovatif dan berkelanjutan.</p>
       <button class="btn-primary" id="learnMoreBtn">Pelajari Lebih Lanjut</button>
     </section>
 
@@ -352,17 +352,17 @@
     <section id="about">
       <h2>Tentang Kami</h2>
       <p>
-        SatzzZ Market berdiri sejak 2023. Kami menyediakan panel & layanan digital untuk individu dan usaha kecil dengan harga terjangkau. Semua order dilayani cepat & mendapat support 24/7 via WhatsApp.
+        SatzzZ Market adalah perusahaan yang berfokus pada pengembangan solusi inovatif untuk meningkatkan kualitas hidup masyarakat. Dengan filosofi SatzzZ, kami percaya bahwa perbaikan kecil yang berkelanjutan akan membawa perubahan besar.
       </p>
     </section>
 
     <section id="contact">
       <h2>Kontak Kami</h2>
       <p>
-        Email: <a href="mailto:info@kaizenmfh.com">info@satzzz.com</a><br />
+        Email: <a href="mailto:info@satzzz.com">info@satzzz.com</a><br />
         Telepon: +62 878-5644-4909
       </p>
-      <a href="mailto:info@kaizenmfh.com" class="btn-primary">Hubungi Kami</a>
+      <a href="mailto:info@satzzz.com" class="btn-primary">Hubungi Kami</a>
     </section>
   </main>
 
@@ -371,12 +371,18 @@
   </footer>
 
   <script>
+    // Fungsi buka WhatsApp dengan pesan produk
     function openWhatsApp(productName) {
       const phoneNumber = '6287856444909'; // Ganti dengan nomor WhatsApp Anda (format internasional tanpa +)
       const message = encodeURIComponent(`Halo, saya tertarik dengan ${productName}. Mohon info lebih lanjut.`);
       const url = `https://wa.me/${phoneNumber}?text=${message}`;
       window.open(url, '_blank');
     }
+
+    // Smooth scroll ke fitur saat tombol pelajari lebih lanjut diklik
+    document.getElementById('learnMoreBtn').addEventListener('click', function() {
+      document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
+    });
   </script>
 </body>
 </html>
