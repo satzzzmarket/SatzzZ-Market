@@ -1,4 +1,5 @@
 // index.js
+<script src="index.js"></script>
 
 // Fungsi buka WhatsApp dengan pesan produk
 function openWhatsApp(productName) {
