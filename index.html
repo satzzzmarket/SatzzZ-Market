@@ -141,72 +141,6 @@
       line-height: 1.4;
     }
 
-    /* Produk */
-    section.products {
-      margin-top: 4rem;
-    }
-    section.products h2 {
-      color: #d1b3ff;
-      margin-bottom: 2rem;
-      text-align: center;
-      font-size: 2rem;
-    }
-    .product-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-    }
-    .product-card {
-      background: #3a0f70;
-      padding: 1.8rem 1.5rem;
-      border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(58, 15, 112, 0.7);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: transform 0.3s ease;
-    }
-    .product-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 8px 30px rgba(155, 89, 182, 0.8);
-    }
-    .product-card h3 {
-      color: #d1b3ff;
-      margin-bottom: 0.8rem;
-      font-size: 1.4rem;
-    }
-    .product-card p {
-      color: #c9a7ff;
-      font-size: 1rem;
-      flex-grow: 1;
-      margin-bottom: 0.5rem;
-    }
-    .product-price {
-      color: #d1b3ff;
-      font-weight: 700;
-      font-size: 1.1rem;
-      margin-bottom: 1rem;
-    }
-    .btn-whatsapp {
-      background: #25d366;
-      color: #fff;
-      font-weight: 700;
-      padding: 0.6rem 1.2rem;
-      border-radius: 30px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.7);
-      transition: background 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      border: none;
-      user-select: none;
-    }
-    .btn-whatsapp:hover {
-      background: #1ebe57;
-      box-shadow: 0 6px 20px rgba(30, 190, 87, 0.9);
-    }
-
     section#about {
       margin-top: 4rem;
       max-width: 700px;
@@ -298,7 +232,7 @@
     <h1>SatzzZ Market</h1>
     <nav>
       <a href="#features">Fitur</a>
-      <a href="#products">Produk</a>
+      <a href="products.html">Produk</a>  <!-- Link ke halaman produk baru -->
       <a href="#about">Tentang</a>
       <a href="#contact">Kontak</a>
     </nav>
@@ -306,19 +240,18 @@
 
   <main>
     <section class="hero">
-  <h2>Selamat Datang di SatzzZ Market</h2>
-  <p>SatzzzMarket — Panel & layanan digital murah ✅ Support 24/7 via WA ⚡ Garansi 7 hari • Pembayaran mudah.</p>
-  <button class="btn-primary" id="learnMoreBtn">Pelajari Lebih Lanjut</button>
-  <br><br>
+      <h2>Selamat Datang di SatzzZ Market</h2>
+      <p>SatzzzMarket — Panel & layanan digital murah ✅ Support 24/7 via WA ⚡ Garansi 7 hari • Pembayaran mudah.</p>
+      <button class="btn-primary" id="learnMoreBtn">Pelajari Lebih Lanjut</button>
+      <br><br>
 
-  <!-- Dropdown pilih background -->
-  <label for="bgSelector">Pilih Background:</label>
-  <select id="bgSelector" class="btn-primary">
-    <option value="#2e0854">Default Ungu</option>
-    <option value="url('https://img1.pixhost.to/images/8834/642496679_zion.jpg')">SatzzZ Market</option>
-  </select>
-</section>
-
+      <!-- Dropdown pilih background -->
+      <label for="bgSelector">Pilih Background:</label>
+      <select id="bgSelector" class="btn-primary">
+        <option value="#2e0854">Default Ungu</option>
+        <option value="url('https://img1.pixhost.to/images/8834/642496679_zion.jpg')">SatzzZ Market</option>
+      </select>
+    </section>
 
     <section id="features" class="features">
       <div class="feature-card">
@@ -332,30 +265,6 @@
       <div class="feature-card">
         <h3>Komitmen Kualitas</h3>
         <p>Setiap produk dan layanan kami melewati standar kualitas yang ketat.</p>
-      </div>
-    </section>
-
-    <section id="products" class="products">
-      <h2>Produk Kami</h2>
-      <div class="product-list">
-        <div class="product-card">
-          <h3>ADMIN PANEL PTERODACTYL</h3>
-          <p>Admin Panel Pterodactyl – kontrol penuh, aman, dan terpercaya untuk mengelola server dengan mudah dan efisien.</p>
-          <div class="product-price">Rp 15.000</div>
-          <button class="btn-whatsapp" onclick="openWhatsApp('ADMIN PANEL PTERODACTYL')">Pesan via WhatsApp</button>
-        </div>
-        <div class="product-card">
-          <h3>RESELLER PANEL PTERODACTYL</h3>
-          <p>Reseller Panel Pterodactyl – solusi terpercaya untuk menjual layanan panel dengan mudah, aman, dan berkualitas tinggi.</p>
-          <div class="product-price">Rp 10.000</div>
-          <button class="btn-whatsapp" onclick="openWhatsApp('RESELLER PANEL PTERODACTYL')">Pesan via WhatsApp</button>
-        </div>
-        <div class="product-card">
-          <h3>SERVER PANEL PTERODACTYL</h3>
-          <p>Server Panel Pterodactyl - panel manajemen server modern, cepat, aman, dan terpercaya untuk kebutuhan panel Anda.</p>
-          <div class="product-price">Rp 500-7.000</div>
-          <button class="btn-whatsapp" onclick="openWhatsApp('SERVER PANEL PTERODACTYL')">Pesan via WhatsApp</button>
-        </div>
       </div>
     </section>
 
@@ -381,14 +290,6 @@
   </footer>
 
 <script>
-  // Fungsi buka WhatsApp
-  function openWhatsApp(productName) {
-    const phoneNumber = '6287856444909';
-    const message = encodeURIComponent(`Halo, saya tertarik dengan ${productName}. Mohon info lebih lanjut.`);
-    const url = `https://wa.me/${phoneNumber}?text=${message}`;
-    window.open(url, '_blank');
-  }
-
   // Smooth scroll
   document.getElementById('learnMoreBtn').addEventListener('click', function() {
     document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
@@ -405,11 +306,3 @@
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
