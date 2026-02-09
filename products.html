@@ -178,4 +178,39 @@
       <h2>Produk Kami</h2>
       <div class="product-list">
         <div class="product-card">
-          <h3>ADMIN
+          <h3>ADMIN PANEL PTERODACTYL</h3>
+          <p>Admin Panel Pterodactyl – kontrol penuh, aman, dan terpercaya untuk mengelola server dengan mudah dan efisien.</p>
+          <div class="product-price">Rp 15.000</div>
+          <button class="btn-whatsapp" onclick="openWhatsApp('ADMIN PANEL PTERODACTYL')">Pesan via WhatsApp</button>
+        </div>
+        <div class="product-card">
+          <h3>RESELLER PANEL PTERODACTYL</h3>
+          <p>Reseller Panel Pterodactyl – solusi terpercaya untuk menjual layanan panel dengan mudah, aman, dan berkualitas tinggi.</p>
+          <div class="product-price">Rp 10.000</div>
+          <button class="btn-whatsapp" onclick="openWhatsApp('RESELLER PANEL PTERODACTYL')">Pesan via WhatsApp</button>
+        </div>
+        <div class="product-card">
+          <h3>SERVER PANEL PTERODACTYL</h3>
+          <p>Server Panel Pterodactyl - panel manajemen server modern, cepat, aman, dan terpercaya untuk kebutuhan panel Anda.</p>
+          <div class="product-price">Rp 500-7.000</div>
+          <button class="btn-whatsapp" onclick="openWhatsApp('SERVER PANEL PTERODACTYL')">Pesan via WhatsApp</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2023 SatzzZ Market. Semua hak cipta dilindungi.
+  </footer>
+
+<script>
+  // Fungsi buka WhatsApp
+  function openWhatsApp(productName) {
+    const phoneNumber = '6287856444909';
+    const message = encodeURIComponent(`Halo, saya tertarik dengan ${productName}. Mohon info lebih lanjut.`);
+    const url = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(url, '_blank');
+  }
+</script>
+</body>
+</html>
